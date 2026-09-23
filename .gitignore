@@ -52,6 +52,3 @@ Thumbs.db
 .cache/
 *.tmp
 *.temp
-
-# Local reference screenshots
-/Screenshot *.png
