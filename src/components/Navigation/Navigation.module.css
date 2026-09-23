@@ -1,0 +1,40 @@
+.navContainer {
+  display: flex;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navItem {
+  background: none;
+  color: white;
+  font-size: 1.1rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItem:hover, .navItem.active {
+  opacity: 1;
+  transform: translateY(-3px);
+  color: var(--accent-color);
+}
+
+@media (max-width: 1023px) {
+  .navContainer {
+    width: auto;
+    border-radius: 30px; /* Keep pill shape */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .navItem {
+    font-size: 1.1rem; /* Same as desktop */
+  }
+}

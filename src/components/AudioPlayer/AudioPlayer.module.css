@@ -1,0 +1,36 @@
+.playerContainer {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+
+.playerContainer:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.musicIcon {
+  font-size: 0.9rem;
+}
+
+.playing .musicIcon {
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}

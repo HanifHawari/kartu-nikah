@@ -1,0 +1,109 @@
+.appContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.leftPanel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: width 1s cubic-bezier(0.77, 0, 0.175, 1);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  box-shadow: 2px 0 20px rgba(0, 0, 0, 0.5);
+  background-color: #111; /* Dark background before image loads */
+}
+
+.fixedControls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  z-index: 20;
+}
+
+.fixedControls > :nth-child(1) {
+  justify-self: start;
+}
+
+.fixedControls > :nth-child(2) {
+  justify-self: center;
+}
+
+.rightPanel {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--bg-color);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+  display: none;
+}
+
+.rightPanel.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .leftPanel.opened {
+    width: 35%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 1023px) {
+  .appContainer {
+    flex-direction: column;
+  }
+  
+  .appContainer.appOpened {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .leftPanel {
+    height: 100vh; /* Takes full first screen */
+    min-height: 100vh;
+  }
+  
+  .leftPanel.opened {
+    /* on mobile, it just stays full height, but user can scroll down */
+    position: relative;
+  }
+  
+  .rightPanel {
+    height: auto;
+    overflow: visible; /* Let the container handle scroll on mobile */
+  }
+  
+  .fixedControls {
+    position: fixed; /* Keep it fixed at bottom of screen */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 20px 15px 20px; /* Add padding for mobile */
+    pointer-events: none; /* Let clicks pass through empty spaces */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+  
+  .fixedControls > * {
+    pointer-events: auto; /* Re-enable clicks on buttons */
+  }
+}
