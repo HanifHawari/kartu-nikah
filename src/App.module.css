@@ -63,6 +63,10 @@
   .leftPanel.opened {
     width: 35%;
   }
+
+  .fixedControls {
+    width: 35%;
+  }
 }
 
 /* Mobile */
@@ -74,6 +78,12 @@
   .appContainer.appOpened {
     overflow-y: auto;
     overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .appContainer.appOpened::-webkit-scrollbar {
+    display: none;
   }
   
   .leftPanel {
@@ -84,6 +94,10 @@
   .leftPanel.opened {
     /* on mobile, it just stays full height, but user can scroll down */
     position: relative;
+  }
+
+  .leftPanel.dismissed {
+    display: none;
   }
   
   .rightPanel {

@@ -15,7 +15,7 @@
 
 /* SOLID SECTIONS */
 .solidSection {
-  background-color: #fcfbf8; /* Krem terang elegan */
+  background: url('/download.jpg') center / cover no-repeat;
 }
 
 /* PARALLAX SECTIONS */
@@ -219,7 +219,9 @@
 
 /* 4. Countdown */
 .countdownSection {
-  background-color: var(--primary-color);
+  background:
+    linear-gradient(rgba(32, 29, 26, 0.68), rgba(32, 29, 26, 0.68)),
+    url('/download.jpg') center / cover no-repeat;
   color: white;
 }
 .countdownTitle {

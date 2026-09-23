@@ -20,7 +20,7 @@ import styles from './MainContent.module.css';
 const COUPLE_BACKGROUNDS = ['/hero.jpg', '/galeri-3.jpg', '/galeri-6.jpg', '/galeri-8.jpg'];
 const EVENT_BACKGROUNDS = ['/hero.jpg', '/galeri-1.jpg', '/galeri-2.jpg', '/galeri-4.jpg'];
 const WEDDING_DATE = new Date('2026-09-24T00:00:00+07:00').getTime();
-const RSVP_STORAGE_KEY = 'Hanieh-Elsa-rsvp';
+const RSVP_STORAGE_KEY = 'Hanief-Elsa-rsvp';
 const WISHES_STORAGE_KEY = 'Hanief-Elsa-wishes';
 
 const readLocalEntries = (storageKey) => {
@@ -198,7 +198,7 @@ const MainContent = ({ setActiveSection }) => {
       'DTSTART;VALUE=DATE:20260924',
       'DTEND;VALUE=DATE:20260925',
       'SUMMARY:Pernikahan Hanief & Elsa',
-      'LOCATION:Jl. Lorem Ipsum No 22, Jakarta.',
+      'LOCATION:Jl. Bakungan, Wedomartani, Yogyakarta.',
       'END:VEVENT',
       'END:VCALENDAR'
     ].join('\r\n');
@@ -327,7 +327,7 @@ const MainContent = ({ setActiveSection }) => {
       </section>
 
       {/* 2. Quote Section (Solid) */}
-      <section className={`${styles.section} ${styles.solidSection} ${styles.quoteSection}`}>
+      <section className={`${styles.section} ${styles.solidSection}`}>
         <Reveal direction="up">
           <div className={styles.quoteIcon}>"</div>
           <p className={styles.quoteText}>
@@ -369,7 +369,7 @@ const MainContent = ({ setActiveSection }) => {
         <Reveal direction="right">
           <div className={`${styles.coupleProfile} ${styles.coupleProfileBottom}`}>
             <img src="/profil-pria.jpg" className={styles.profileImagePlaceholder} alt="Putra" />
-            <h3 className={styles.profileName}>Hanief Hawari</h3>
+            <h3 className={styles.profileName}>Hanief</h3>
             <p className={styles.profileDesc}>Putra Pertama dari<br/>Bapak Lorem Ipsum & Ibu Lorem Ipsum</p>
             <a
               href="https://www.instagram.com/haniefhawari"
@@ -415,7 +415,7 @@ const MainContent = ({ setActiveSection }) => {
               <span>September 2026</span>
             </div>
             <p>07.00 WIB - Selesai</p>
-            <p className={styles.location}>Bertempat Di:<br/>Kediaman Mempelai Wanita<br/>Jl. Lorem Ipsum No 22, Jakarta.</p>
+            <p className={styles.location}>Bertempat Di:<br/>Kediaman Mempelai Wanita<br/>Jl. Bakungan, Wedomartani, Yogyakarta.</p>
             <a
               href="https://maps.app.goo.gl/aCQrEHgPEkgz7w8o9?g_st=ic"
               className={styles.mapBtn}
@@ -440,7 +440,7 @@ const MainContent = ({ setActiveSection }) => {
               <span>September 2026</span>
             </div>
             <p>09.00 WIB - Selesai</p>
-            <p className={styles.location}>Bertempat Di:<br/>Kediaman Mempelai Wanita<br/>Jl. Lorem Ipsum No 22, Jakarta.</p>
+            <p className={styles.location}>Bertempat Di:<br/>Kediaman Mempelai Wanita<br/>Jl. Bakungan, Wedomartani, Yogyakarta.</p>
             <a
               href="https://maps.app.goo.gl/aCQrEHgPEkgz7w8o9?g_st=ic"
               className={styles.mapBtn}
@@ -455,7 +455,7 @@ const MainContent = ({ setActiveSection }) => {
       </section>
 
       {/* 6. Live Streaming (Solid) */}
-      <section className={`${styles.section} ${styles.solidSection} ${styles.streamingSection}`}>
+      <section className={`${styles.section} ${styles.solidSection}`}>
         <Reveal direction="up">
           <h2 className={styles.sectionTitle}>Live Streaming</h2>
           <p className={styles.sectionDesc}>Bagi tamu undangan yang berhalangan hadir dan ingin menyaksikan acara pernikahan kami silahkan ikuti live streaming acara pernikahan kami dengan klik tombol di bawah:</p>
@@ -508,7 +508,7 @@ const MainContent = ({ setActiveSection }) => {
       </section>
 
       {/* 8. Love Story (Solid) */}
-      <section className={`${styles.section} ${styles.solidSection} ${styles.storySection}`}>
+      <section className={`${styles.section} ${styles.solidSection}`}>
         <Reveal direction="up">
           <h2 className={styles.sectionTitle}>Our Love Story</h2>
         </Reveal>
@@ -618,9 +618,9 @@ const MainContent = ({ setActiveSection }) => {
               <div className={styles.physicalGift}>
                 <FaGift aria-hidden="true" />
                 <p>Anda juga bisa mengirim kado fisik ke alamat berikut:</p>
-                <strong>Jl. Lorem Ipsum No 22, Jakarta.</strong>
+                <strong>Jl. Bakungan, Wedomartani, Yogyakarta.</strong>
               </div>
-              <button type="button" className={styles.copyBtn} onClick={() => handleCopy('Jl. Lorem Ipsum No 22, Jakarta.', 'address')}>
+              <button type="button" className={styles.copyBtn} onClick={() => handleCopy('Jl. Bakungan, Wedomartani, Yogyakarta.', 'address')}>
                 <FaCopy /> {copiedItem === 'address' ? 'Berhasil Disalin' : 'Copy Alamat'}
               </button>
 
@@ -647,7 +647,7 @@ const MainContent = ({ setActiveSection }) => {
       </section>
 
       {/* 10. RSVP (Solid) */}
-      <section id="rsvp" className={`${styles.section} ${styles.solidSection} ${styles.rsvpSection}`}>
+      <section id="rsvp" className={`${styles.section} ${styles.solidSection}`}>
         <Reveal direction="up">
           <div className={styles.rsvpCard}>
             <img src="/rsvp.jpg" className={styles.rsvpImagePlaceholder} alt="RSVP Cover" />

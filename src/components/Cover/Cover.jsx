@@ -5,7 +5,7 @@ import styles from './Cover.module.css';
 
 const Cover = ({ isOpened, onOpen }) => {
   return (
-    <div className={styles.coverWrapper}>
+    <div className={`${styles.coverWrapper} ${isOpened ? styles.opened : ''}`}>
       {/* Background Media */}
       <img src="/cover-bg.jpg" className={styles.bgMedia} alt="Background" />
       
@@ -31,7 +31,7 @@ const Cover = ({ isOpened, onOpen }) => {
             transition={{ delay: 0.5, duration: 1 }}
           >
             <p className={styles.to}>Kepada Yth. Bapak/Ibu/Saudara/i</p>
-            <h2 className={styles.guestName}>Nama Tamu</h2>
+            <h2 className={styles.guestName}>KAMARUDIN</h2>
             <button className={styles.openBtn} onClick={onOpen}>
               <FaEnvelopeOpen className={styles.icon} /> Buka Undangan
             </button>
