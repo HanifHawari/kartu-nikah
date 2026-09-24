@@ -349,7 +349,7 @@ const MainContent = ({ setActiveSection }) => {
           <div className={`${styles.coupleProfile} ${styles.coupleProfileTop}`}>
             <img src="/profil-wanita.jpg" className={styles.profileImagePlaceholder} alt="Putri" />
             <h3 className={styles.profileName}>Elsa</h3>
-            <p className={styles.profileDesc}>Putri Pertama dari<br/>Bapak Manik & Ibu Damanik</p>
+            <p className={styles.profileDesc}>Putri Pertama dari<br/>Bapak Arif & Ibu Devi</p>
             <a
               href="https://www.instagram.com/elsadaimanik"
               className={styles.instagramLink}
@@ -370,7 +370,7 @@ const MainContent = ({ setActiveSection }) => {
           <div className={`${styles.coupleProfile} ${styles.coupleProfileBottom}`}>
             <img src="/profil-pria.jpg" className={styles.profileImagePlaceholder} alt="Putra" />
             <h3 className={styles.profileName}>Hanief</h3>
-            <p className={styles.profileDesc}>Putra Pertama dari<br/>Bapak Hawari & Ibu Hawari</p>
+            <p className={styles.profileDesc}>Putra Pertama dari<br/>Bapak Rahmat & Ibu Yessyi</p>
             <a
               href="https://www.instagram.com/haniefhawari"
               className={styles.instagramLink}
