@@ -291,9 +291,9 @@ const MainContent = ({ setActiveSection }) => {
 
   useEffect(() => {
     if (!setActiveSection) return;
-    
+
     const sections = document.querySelectorAll('section[id]');
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -315,7 +315,7 @@ const MainContent = ({ setActiveSection }) => {
 
   return (
     <div className={styles.mainContainer}>
-      
+
       {/* 1. Hero Section (Solid or Parallax) */}
       <section id="hero" className={`${styles.section} ${styles.heroSection}`}>
         <Reveal direction="up">
@@ -344,12 +344,12 @@ const MainContent = ({ setActiveSection }) => {
           <h2 className={styles.sectionTitle}>Wedding Couple</h2>
           <p className={styles.sectionDesc}>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaAllah kami akan menyelenggarakan acara pernikahan kami:</p>
         </Reveal>
-        
+
         <Reveal direction="left">
           <div className={`${styles.coupleProfile} ${styles.coupleProfileTop}`}>
             <img src="/profil-wanita.jpg" className={styles.profileImagePlaceholder} alt="Putri" />
             <h3 className={styles.profileName}>Elsa</h3>
-            <p className={styles.profileDesc}>Putri Pertama dari<br/>Bapak Arif & Ibu Devi</p>
+            <p className={styles.profileDesc}>Putri Pertama dari<br />Bapak Arif & Ibu Devi</p>
             <a
               href="https://www.instagram.com/elsadaimanik"
               className={styles.instagramLink}
@@ -370,7 +370,7 @@ const MainContent = ({ setActiveSection }) => {
           <div className={`${styles.coupleProfile} ${styles.coupleProfileBottom}`}>
             <img src="/profil-pria.jpg" className={styles.profileImagePlaceholder} alt="Putra" />
             <h3 className={styles.profileName}>Hanief</h3>
-            <p className={styles.profileDesc}>Putra Pertama dari<br/>Bapak Rahmat & Ibu Yessyi</p>
+            <p className={styles.profileDesc}>Putra Pertama dari<br />Bapak Rahmat & Ibu Yessyi</p>
             <a
               href="https://www.instagram.com/haniefhawari"
               className={styles.instagramLink}
@@ -415,7 +415,7 @@ const MainContent = ({ setActiveSection }) => {
               <span>Desember 2026</span>
             </div>
             <p>07.00 WIB - Selesai</p>
-            <p className={styles.location}>Bertempat Di:<br/>Kediaman Mempelai Wanita<br/>Jl. Bakungan, Wedomartani, Yogyakarta.</p>
+            <p className={styles.location}>Bertempat Di:<br />Kediaman Mempelai Wanita<br />Jl. Bakungan, Wedomartani, Yogyakarta.</p>
             <a
               href="https://maps.app.goo.gl/aCQrEHgPEkgz7w8o9?g_st=ic"
               className={styles.mapBtn}
@@ -440,7 +440,7 @@ const MainContent = ({ setActiveSection }) => {
               <span>Desember 2026</span>
             </div>
             <p>09.00 WIB - Selesai</p>
-            <p className={styles.location}>Bertempat Di:<br/>Kediaman Mempelai Wanita<br/>Jl. Bakungan, Wedomartani, Yogyakarta.</p>
+            <p className={styles.location}>Bertempat Di:<br />Kediaman Mempelai Wanita<br />Jl. Bakungan, Wedomartani, Yogyakarta.</p>
             <a
               href="https://maps.app.goo.gl/aCQrEHgPEkgz7w8o9?g_st=ic"
               className={styles.mapBtn}
@@ -488,7 +488,7 @@ const MainContent = ({ setActiveSection }) => {
 
         <Reveal direction="up" delay={0.2}>
           <div className={styles.galleryMosaic}>
-            {[1,2,3,4,5,6,7,8].map(i => (
+            {[1, 2, 3, 4, 5, 6, 7, 8].map(i => (
               <a
                 key={i}
                 href={`/galeri-${i}.jpg`}
@@ -582,6 +582,15 @@ const MainContent = ({ setActiveSection }) => {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.55, ease: 'easeOut' }}
             >
+              <button
+                type="button"
+                className={styles.closeGiftBtn}
+                onClick={() => setIsGiftOpen(false)}
+                title="Tutup"
+                aria-label="Tutup halaman hadiah"
+              >
+                ✕
+              </button>
               <div className={styles.giftAccount}>
                 <div>
                   <p className={styles.bankOwner}>Elsa</p>
@@ -623,7 +632,7 @@ const MainContent = ({ setActiveSection }) => {
                 <select id="gift-destination" name="destination" defaultValue="" required>
                   <option value="" disabled>Rekening/Alamat Tujuan</option>
                   <option value="BCA - Elsa">BCA - Elsa</option>
-                  <option value="Mandiri - Hanief Hawari">Mandiri - Hanief Hawari</option>
+                  <option value="Mandiri - Hanief Hawari">Mandiri - Hanief </option>
                   <option value="Kado fisik">Kado fisik</option>
                 </select>
                 <button type="submit" className={styles.whatsappBtn} title="Buka WhatsApp untuk mengirim konfirmasi">
@@ -642,7 +651,7 @@ const MainContent = ({ setActiveSection }) => {
             <img src="/rsvp.jpg" className={styles.rsvpImagePlaceholder} alt="RSVP Cover" />
             <h2 className={styles.sectionTitle}>RSVP</h2>
             <p className={styles.sectionDesc}>*Kepada tamu undangan diharapkan untuk mengisi form kehadiran di bawah ini</p>
-            
+
             <form className={styles.rsvpForm} onSubmit={handleRsvpSubmit}>
               <input name="name" type="text" placeholder="Nama" required />
               <input name="guests" type="number" placeholder="Jumlah" required min="1" />
@@ -663,7 +672,7 @@ const MainContent = ({ setActiveSection }) => {
         <Reveal direction="up">
           <h2 className={styles.sectionTitle}>Ucapan & Doa</h2>
           <p className={styles.sectionDesc}>Kirimkan ucapan dan doa untuk kedua mempelai</p>
-          
+
           <form className={styles.wishesForm} onSubmit={handleWishSubmit}>
             <input name="name" type="text" placeholder="Nama Tamu" required />
             <textarea name="message" placeholder="Tulis ucapan & doa..." rows="4" required></textarea>
