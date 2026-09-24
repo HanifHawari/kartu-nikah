@@ -577,71 +577,69 @@
 .giftIconWrap {
   display: grid;
   place-items: center;
-  width: 82px;
-  height: 82px;
+  width: 112px;
+  height: 112px;
   margin: 0 auto 24px;
-  border: 1px solid rgba(201,169,126,0.75);
-  border-radius: 50%;
   color: var(--primary-color);
-  box-shadow: 0 0 0 8px rgba(201,169,126,0.12);
 }
 .giftBoxIllustration {
   position: relative;
-  width: 54px;
-  height: 58px;
+  width: 96px;
+  height: 108px;
 }
 .giftBoxBody {
   position: absolute;
-  left: 5px;
-  bottom: 2px;
-  width: 44px;
-  height: 38px;
-  border: 3px solid var(--primary-color);
-  border-radius: 3px 3px 7px 7px;
-  background: rgba(255,255,255,0.42);
+  left: 6px;
+  bottom: 0;
+  width: 84px;
+  height: 58px;
+  border: 5px solid var(--primary-color);
+  background: transparent;
+  box-sizing: border-box;
 }
 .giftBoxBody::before {
   content: '';
   position: absolute;
-  top: -3px;
-  bottom: -3px;
+  top: -5px;
+  bottom: -5px;
   left: 50%;
-  width: 8px;
-  border-left: 3px solid var(--primary-color);
-  border-right: 3px solid var(--primary-color);
+  width: 18px;
+  border-left: 5px solid var(--primary-color);
+  border-right: 5px solid var(--primary-color);
   transform: translateX(-50%);
+  box-sizing: border-box;
 }
 .giftLid {
   position: absolute;
-  top: 11px;
-  left: 0;
+  top: 20px;
+  left: 2px;
   z-index: 2;
-  width: 54px;
-  height: 14px;
-  border: 3px solid var(--primary-color);
-  border-radius: 5px;
-  background: #eee5d9;
-  transform-origin: right bottom;
+  width: 92px;
+  height: 26px;
+  border: 5px solid var(--primary-color);
+  background: transparent;
+  box-sizing: border-box;
 }
 .giftLid::before,
 .giftLid::after {
   content: '';
   position: absolute;
-  bottom: 9px;
-  width: 18px;
-  height: 15px;
-  border: 3px solid var(--primary-color);
-  background: rgba(255,255,255,0.5);
+  bottom: 21px;
+  width: 36px;
+  height: 27px;
+  border: 5px solid var(--primary-color);
+  background: transparent;
+  box-sizing: border-box;
 }
 .giftLid::before {
-  left: 7px;
-  border-radius: 13px 13px 2px 13px;
-  transform: rotate(18deg);
+  left: 5px;
+  border-radius: 70% 45% 45% 70%;
+  transform: rotate(16deg);
 }
 .giftLid::after {
-  right: 7px;
-  border-radius: 13px 13px 13px 2px;
-  transform: rotate(-18deg);
+  right: 5px;
+  border-radius: 45% 70% 70% 45%;
+  transform: rotate(-16deg);
 }
 .giftIntroCard p {
   color: var(--text-secondary);

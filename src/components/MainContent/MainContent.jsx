@@ -19,7 +19,7 @@ import styles from './MainContent.module.css';
 
 const COUPLE_BACKGROUNDS = ['/hero.jpg', '/galeri-3.jpg', '/galeri-6.jpg', '/galeri-8.jpg'];
 const EVENT_BACKGROUNDS = ['/hero.jpg', '/galeri-1.jpg', '/galeri-2.jpg', '/galeri-4.jpg'];
-const WEDDING_DATE = new Date('2026-09-24T00:00:00+07:00').getTime();
+const WEDDING_DATE = new Date('2026-12-14T00:00:00+07:00').getTime();
 const RSVP_STORAGE_KEY = 'Hanief-Elsa-rsvp';
 const WISHES_STORAGE_KEY = 'Hanief-Elsa-wishes';
 
@@ -194,9 +194,9 @@ const MainContent = ({ setActiveSection }) => {
       'VERSION:2.0',
       'PRODID:-//Hanief & Elsa//Wedding Invitation//ID',
       'BEGIN:VEVENT',
-      'UID:Hanief-Elsa-wedding-20260924',
-      'DTSTART;VALUE=DATE:20260924',
-      'DTEND;VALUE=DATE:20260925',
+      'UID:Hanief-Elsa-wedding-20261214',
+      'DTSTART;VALUE=DATE:20261214',
+      'DTEND;VALUE=DATE:20261216',
       'SUMMARY:Pernikahan Hanief & Elsa',
       'LOCATION:Jl. Bakungan, Wedomartani, Yogyakarta.',
       'END:VEVENT',
@@ -410,9 +410,9 @@ const MainContent = ({ setActiveSection }) => {
             <div className={styles.eventDivider} aria-hidden="true"></div>
             <div className={styles.dateBox}>
               <FaCalendarAlt aria-hidden="true" />
-              <span>Minggu</span>
-              <strong><AnimatedCounter value={23} /></strong>
-              <span>September 2026</span>
+              <span>Senin</span>
+              <strong><AnimatedCounter value={14} /></strong>
+              <span>Desember 2026</span>
             </div>
             <p>07.00 WIB - Selesai</p>
             <p className={styles.location}>Bertempat Di:<br/>Kediaman Mempelai Wanita<br/>Jl. Bakungan, Wedomartani, Yogyakarta.</p>
@@ -435,9 +435,9 @@ const MainContent = ({ setActiveSection }) => {
             <div className={styles.eventDivider} aria-hidden="true"></div>
             <div className={styles.dateBox}>
               <FaCalendarAlt aria-hidden="true" />
-              <span>Minggu</span>
-              <strong><AnimatedCounter value={23} /></strong>
-              <span>September 2026</span>
+              <span>Selasa</span>
+              <strong><AnimatedCounter value={15} /></strong>
+              <span>Desember 2026</span>
             </div>
             <p>09.00 WIB - Selesai</p>
             <p className={styles.location}>Bertempat Di:<br/>Kediaman Mempelai Wanita<br/>Jl. Bakungan, Wedomartani, Yogyakarta.</p>
@@ -562,14 +562,14 @@ const MainContent = ({ setActiveSection }) => {
             >
               <motion.div
                 className={styles.giftIconWrap}
-                animate={{ y: [0, 0, -18, 0, 0] }}
-                transition={{ duration: 2.2, repeat: Infinity, times: [0, 0.3, 0.48, 0.68, 1], ease: 'easeInOut' }}
+                animate={{ y: [0, -4, 0] }}
+                transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
               >
                 <div className={styles.giftBoxIllustration} aria-hidden="true">
                   <motion.div
                     className={styles.giftLid}
-                    animate={{ y: [0, 0, -14, -12, 0], x: [0, 0, 5, 5, 0], rotate: [0, 0, 9, 9, 0] }}
-                    transition={{ duration: 2.2, repeat: Infinity, times: [0, 0.3, 0.5, 0.68, 0.88], ease: 'easeInOut' }}
+                    animate={{ y: [0, -8, 0] }}
+                    transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
                   />
                   <div className={styles.giftBoxBody}></div>
                 </div>
