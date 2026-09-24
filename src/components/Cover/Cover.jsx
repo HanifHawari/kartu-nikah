@@ -31,7 +31,7 @@ const Cover = ({ isOpened, onOpen }) => {
             transition={{ delay: 0.5, duration: 1 }}
           >
             <p className={styles.to}>Kepada Yth. Bapak/Ibu/Saudara/i</p>
-            <h2 className={styles.guestName}>KAMARUDIN</h2>
+            <h2 className={styles.guestName}>MAS RENDI</h2>
             <button className={styles.openBtn} onClick={onOpen}>
               <FaEnvelopeOpen className={styles.icon} /> Buka Undangan
             </button>

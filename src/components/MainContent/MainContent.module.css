@@ -577,69 +577,14 @@
 .giftIconWrap {
   display: grid;
   place-items: center;
-  width: 112px;
-  height: 112px;
   margin: 0 auto 24px;
-  color: var(--primary-color);
 }
-.giftBoxIllustration {
-  position: relative;
-  width: 96px;
-  height: 108px;
-}
-.giftBoxBody {
-  position: absolute;
-  left: 6px;
-  bottom: 0;
-  width: 84px;
-  height: 58px;
-  border: 5px solid var(--primary-color);
-  background: transparent;
-  box-sizing: border-box;
-}
-.giftBoxBody::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  bottom: -5px;
-  left: 50%;
-  width: 18px;
-  border-left: 5px solid var(--primary-color);
-  border-right: 5px solid var(--primary-color);
-  transform: translateX(-50%);
-  box-sizing: border-box;
-}
-.giftLid {
-  position: absolute;
-  top: 20px;
-  left: 2px;
-  z-index: 2;
-  width: 92px;
-  height: 26px;
-  border: 5px solid var(--primary-color);
-  background: transparent;
-  box-sizing: border-box;
-}
-.giftLid::before,
-.giftLid::after {
-  content: '';
-  position: absolute;
-  bottom: 21px;
-  width: 36px;
-  height: 27px;
-  border: 5px solid var(--primary-color);
-  background: transparent;
-  box-sizing: border-box;
-}
-.giftLid::before {
-  left: 5px;
-  border-radius: 70% 45% 45% 70%;
-  transform: rotate(16deg);
-}
-.giftLid::after {
-  right: 5px;
-  border-radius: 45% 70% 70% 45%;
-  transform: rotate(-16deg);
+
+.giftGif {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
 }
 .giftIntroCard p {
   color: var(--text-secondary);

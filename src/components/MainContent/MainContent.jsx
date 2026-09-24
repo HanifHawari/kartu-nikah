@@ -322,7 +322,7 @@ const MainContent = ({ setActiveSection }) => {
           <img src="/hero.jpg" className={styles.heroImagePlaceholder} alt="Hero" />
           <p className={styles.heroSubtitle}>THE WEDDING OF</p>
           <h1 className={styles.heroTitle}>Hanief & Elsa</h1>
-          <p className={styles.heroDate}>24 . 09 . 2026</p>
+          <p className={styles.heroDate}>14 . 12 . 2026</p>
         </Reveal>
       </section>
 
@@ -349,7 +349,7 @@ const MainContent = ({ setActiveSection }) => {
           <div className={`${styles.coupleProfile} ${styles.coupleProfileTop}`}>
             <img src="/profil-wanita.jpg" className={styles.profileImagePlaceholder} alt="Putri" />
             <h3 className={styles.profileName}>Elsa</h3>
-            <p className={styles.profileDesc}>Putri Pertama dari<br/>Bapak Lorem Ipsum & Ibu Lorem Ipsum</p>
+            <p className={styles.profileDesc}>Putri Pertama dari<br/>Bapak Manik & Ibu Damanik</p>
             <a
               href="https://www.instagram.com/elsadaimanik"
               className={styles.instagramLink}
@@ -370,7 +370,7 @@ const MainContent = ({ setActiveSection }) => {
           <div className={`${styles.coupleProfile} ${styles.coupleProfileBottom}`}>
             <img src="/profil-pria.jpg" className={styles.profileImagePlaceholder} alt="Putra" />
             <h3 className={styles.profileName}>Hanief</h3>
-            <p className={styles.profileDesc}>Putra Pertama dari<br/>Bapak Lorem Ipsum & Ibu Lorem Ipsum</p>
+            <p className={styles.profileDesc}>Putra Pertama dari<br/>Bapak Hawari & Ibu Hawari</p>
             <a
               href="https://www.instagram.com/haniefhawari"
               className={styles.instagramLink}
@@ -517,28 +517,28 @@ const MainContent = ({ setActiveSection }) => {
             <div className={styles.timelineItem}>
               <div className={styles.timelineDate}>Maret 2021</div>
               <h4>Awal Bertemu</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Takdir mempertemukan kami pertama kali di sebuah acara kampus. Satu pandangan yang tak terlupakan, sebuah senyum yang langsung menghangatkan hati Hanief. Sejak hari itu, nama Elsa selalu ada di benaknya.</p>
             </div>
           </Reveal>
           <Reveal direction="right">
             <div className={styles.timelineItem}>
               <div className={styles.timelineDate}>April 2022</div>
-              <h4>Awal Hubungan</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h4>Jatuh Cinta</h4>
+              <p>Setelah berbulan-bulan mendekat perlahan, Hanief memberanikan diri mengungkapkan perasaannya. Dengan tangan gemetar dan jantung berdegup kencang, ia berkata, "Aku ingin kamu hadir di setiap harinya." Elsa pun tersenyum dan menjawab, "Iya."</p>
             </div>
           </Reveal>
           <Reveal direction="left">
             <div className={styles.timelineItem}>
-              <div className={styles.timelineDate}>Januari 2023</div>
+              <div className={styles.timelineDate}>Juni 2025</div>
               <h4>Lamaran</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Di bawah langit senja yang berwarna jingga, Hanief berlutut dan mengulurkan cincin sambil berbisik, "Maukah kamu menjadi teman hidupku selamanya?" Air mata kebahagiaan mengalir di pipi Elsa saat ia mengangguk dan berkata, "Ya, selamanya."</p>
             </div>
           </Reveal>
           <Reveal direction="right">
             <div className={styles.timelineItem}>
-              <div className={styles.timelineDate}>September 2024</div>
-              <h4>Menikah</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div className={styles.timelineDate}>Desember 2026</div>
+              <h4>Pernikahan</h4>
+              <p>Hari yang paling kami nantikan akhirnya tiba. Di hadapan keluarga dan orang-orang tersayang, kami mengucapkan janji suci untuk saling menjaga, mencintai, dan menguatkan satu sama lain hingga akhir hayat.</p>
             </div>
           </Reveal>
         </div>
@@ -560,20 +560,9 @@ const MainContent = ({ setActiveSection }) => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.96 }}
             >
-              <motion.div
-                className={styles.giftIconWrap}
-                animate={{ y: [0, -4, 0] }}
-                transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
-              >
-                <div className={styles.giftBoxIllustration} aria-hidden="true">
-                  <motion.div
-                    className={styles.giftLid}
-                    animate={{ y: [0, -8, 0] }}
-                    transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
-                  />
-                  <div className={styles.giftBoxBody}></div>
-                </div>
-              </motion.div>
+              <div className={styles.giftIconWrap}>
+                <img src="/valentines-day-ezgif.com-remove-background.gif" alt="Kado" className={styles.giftGif} />
+              </div>
               <p>Hadiah kecil Anda akan menjadi kenangan yang berarti bagi kami.</p>
               <motion.button
                 type="button"
